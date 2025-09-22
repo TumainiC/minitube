@@ -1,0 +1,161 @@
+/* --- Video Page Layout --- */
+.watch-layout {
+  margin-left: 80px; /* space for sidebar */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+/* --- Video Player Section --- */
+.video-player video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 12px;
+}
+
+.video-player h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #222;
+}
+
+/* --- Actions Row --- */
+.video-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.channel-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.channel-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.subscribe-btn {
+  background: #cc0000;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.subscribe-btn:hover {
+  background: #e60000;
+}
+
+.video-actions .buttons button {
+  background: #f1f1f1;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.video-actions .buttons button:hover {
+  background: #ddd;
+}
+
+/* --- Description & Comments --- */
+.description {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  margin: 15px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.comments {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.comments h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.comments p {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+/* --- Suggested Videos --- */
+.suggested-videos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.suggested-card {
+  display: flex;
+  gap: 10px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.suggested-card:hover {
+  transform: scale(1.02);
+}
+
+.suggested-card img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.suggested-card div {
+  padding: 8px;
+}
+
+.suggested-card h4 {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #111;
+}
+
+.suggested-card p {
+  font-size: 12px;
+  color: #555;
+}
+
+
+
+@media (max-width: 900px) {
+  .watch-layout {
+    margin-left: 0;
+    grid-template-columns: 1fr;
+  }
+  .suggested-videos {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+  .suggested-card {
+    min-width: 220px;
+  }
+}

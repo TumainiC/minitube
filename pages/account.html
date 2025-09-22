@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniTube</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/account.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <header class ="header">
+        <div class="left-section">
+            <div class="menu-icon">☰</div>
+            <div class="logo">
+                <a href="#"><img src="../images/YT_Logo.jpg" alt="MiniTube"></a>
+            </div>
+        </div>        
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>🔍</button>
+        </div>
+        <div class="user-icon">👤</div>
+    </header>
+    <aside class="sidebar">
+        <ul>
+            <li><a href="home.html">🏡<span>Home</span></a></li>
+            <li><a href="#">🎥<span>Shorts</span></a></li>
+            <li><a href="#">🔔<span>Subscriptions</span></a></li>
+            <li><a href="../pages/account.html">👤<span>You</span></a></li>
+        </ul>
+    </aside>
+    <aside class="side-drawer" id="sideDrawer">
+        <header class ="side-drawer-header">
+        <div class="menu-icon">☰</div>
+        <div class="logo">
+        <a href="#"><img src="../images/YT_Logo.jpg" alt="MiniTube"></a></div>
+    </header>
+        <div class="drawer-content">            
+            <ul>
+                <li><a href="home.html">🏡 Home</a></li>
+                <li><a href="#">🎥 Shorts</a></li>
+                <li><a href="#">🔔 Subscriptions</a></li>
+            </ul>
+            <hr>
+            <ul>
+                <li><a href="../pages/account.html">👤 You
+                    <span class="arrow">></span>
+                </a></li>
+                <li><a href="#">📜 History</a></li>
+                <li><a href="#">📂 Playlists</a></li>
+                <li><a href="#">🎥 Your Videos</a></li>
+                <li><a href="#">⏰ Watch Later</a></li>
+                <li><a href="#">👍 Liked Videos</a></li>
+            </ul>
+            <hr>
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="#">🎵 Music</a></li>
+                <li><a href="#">🎮 Gaming</a></li>
+                <li><a href="#">⚽ Sports</a></li>
+                <li><a href="#">🎙️ Podcasts</a></li>
+            </ul>
+            <hr>
+            <ul>
+                <li><a href="#">⚙️ Settings</a></li>
+                <li><a href="#">❓ Help</a></li>
+                <li><a href="#">💡 Send Feedback</a></li>
+            </ul>
+            <hr>
+            <small>© 2025 MiniTube</small>
+        </div>
+    </aside>
+
+    <nav class="categories">
+        <button>All</button>
+        <button>Music</button>
+        <button>Gaming</button>
+        <button>News</button>
+        <button>Sports</button>
+        <button>Learning</button>
+        <button>Live</button>
+    </nav>
+    <main class="account-page">
+    <section class="account-info">
+      <img src="../images/profile_avatar.jpg" alt="Avatar" class="account-avatar">
+      <div class="account-details">
+        <h2>MiniTube User</h2>
+        <p>Display Name: Tumaini</p>
+        <p>Google Account: tumaini@example.com</p>
+      </div>
+    </section>
+
+    <section class="history">
+      <h3>Watch History</h3>
+      <div class="video-grid" id="historyGrid">
+        <!-- History videos will be inserted dynamically -->
+      </div>
+    </section>
+  </main>
+  <script src="../scripts/home.js"></script>
+  <script src="../scripts/video.js"></script>
+  <script src="../scripts/account.js"></script>
+</body>
+</html>

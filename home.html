@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniTube</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <header class ="header">
+        <div class="left-section">
+            <div class="menu-icon">☰</div>
+            <div class="logo">
+                <a href="#"><img src="../images/YT_Logo.jpg" alt="MiniTube"></a>
+            </div>
+        </div>        
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>🔍</button>
+        </div>
+        <div class="user-icon">👤</div>
+    </header>
+    <aside class="sidebar">
+        <ul>
+            <li><a href="home.html">🏡<span>Home</span></a></li>
+            <li><a href="#">🎥<span>Shorts</span></a></li>
+            <li><a href="#">🔔<span>Subscriptions</span></a></li>
+            <li><a href="../pages/account.html">👤<span>You</span></a></li>
+        </ul>
+    </aside>
+    <aside class="side-drawer" id="sideDrawer">
+        <header class ="side-drawer-header">
+        <div class="menu-icon">☰</div>
+        <div class="logo">
+        <a href="#"><img src="../images/YT_Logo.jpg" alt="MiniTube"></a></div>
+    </header>
+        <div class="drawer-content">            
+            <ul>
+                <li><a href="home.html">🏡 Home</a></li>
+                <li><a href="#">🎥 Shorts</a></li>
+                <li><a href="#">🔔 Subscriptions</a></li>
+            </ul>
+            <hr>
+            <ul>
+                <li><a href="../pages/account.html">👤 You
+                    <span class="arrow">></span>
+                </a></li>
+                <li><a href="#">📜 History</a></li>
+                <li><a href="#">📂 Playlists</a></li>
+                <li><a href="#">🎥 Your Videos</a></li>
+                <li><a href="#">⏰ Watch Later</a></li>
+                <li><a href="#">👍 Liked Videos</a></li>
+            </ul>
+            <hr>
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="#">🎵 Music</a></li>
+                <li><a href="#">🎮 Gaming</a></li>
+                <li><a href="#">⚽ Sports</a></li>
+                <li><a href="#">🎙️ Podcasts</a></li>
+            </ul>
+            <hr>
+            <ul>
+                <li><a href="#">⚙️ Settings</a></li>
+                <li><a href="#">❓ Help</a></li>
+                <li><a href="#">💡 Send Feedback</a></li>
+            </ul>
+            <hr>
+            <small>© 2025 MiniTube</small>
+        </div>
+    </aside>
+
+    <nav class="categories">
+        <button>All</button>
+        <button>Music</button>
+        <button>Gaming</button>
+        <button>News</button>
+        <button>Sports</button>
+        <button>Learning</button>
+        <button>Live</button>
+    </nav>
+
+    <main class="video-grid">
+
+        <div 
+        class="video-card" 
+        data-video="video1.mp4" 
+        data-title="How to Sketch with a Pencil" 
+        data-channel="DrawWithMe" 
+        data-thumb="../images/video1.jpg">
+            <img src="../images/video1.jpg" alt="Thumbnail1">
+            <div class="video-info">
+                <h3>Beginners guide to sketching with a pencil</h3>
+                <p>DrawWithMe </p>
+                <p>1M views • 1 month ago</p>
+            </div>
+        </div>
+
+        <div 
+        class="video-card" 
+        data-video="video2.mp4" 
+        data-title="Find out what happens in schools in India" 
+        data-channel="BBC News" 
+        data-thumb="../images/video2.jpg">
+            <img src="../images/video2.jpg" alt="Thumbnail2">
+            <div class="video-info">
+                <h3>Find out what happens in schools in India</h3>
+                <p>BBC News</p>
+                <p>2M views • 11 days ago</p>
+            </div>
+        </div>
+
+        <div class="video-card" 
+        data-video="video3.mp4" 
+        data-title="I can't Believe I was Scammed!!" 
+        data-channel="Mr.Beast" 
+        data-thumb="../images/video3.jpg">
+            <img src="../images/video3.jpg" alt="Thumbnail3">
+            <div class="video-info">
+                <h3>I can't Believe I was Scammed!!</h3>
+                <p>Mr.Beast</p>
+                <p>5M views • 2 weeks ago</p>
+            </div>
+        </div>
+    </main>
+    <script src="../scripts/home.js"></script>
+    <script src="../scripts/video.js"></script>
+    </body>
+</html>

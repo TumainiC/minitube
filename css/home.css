@@ -1,0 +1,287 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.left-section {
+  position: sticky;
+  width: 200px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+
+.menu-icon {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 25px;
+}
+
+.search-bar {
+  display: flex;
+  flex: 1;
+  max-width: 600px;
+  margin: 0 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+.user-icon {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 800; 
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Side Drawer */
+
+.side-drawer-header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1300;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.side-drawer {
+  position: fixed;
+  top: 0;
+  left: -250px; 
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
+  z-index: 1200; 
+  transition: left 0.3s ease-in-out;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.side-drawer.open {
+  left: 0;
+}
+
+.side-drawer ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.side-drawer li{
+  padding: 10px 0;
+}
+
+.side-drawer a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side-drawer hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.side-drawer h4 {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #606060;
+  text-transform: uppercase;
+}
+
+.footer-links {
+  display: block;
+  font-size: 12px;
+  margin-top: 20px;
+  color: #606060;
+}
+
+.footer-links a {
+  color: #606060;
+  text-decoration: none;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 60px; 
+  left: 0;
+  width: 90px;
+  height: calc(100% - 60px);
+  background: #fff;
+  border-right: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.sidebar li {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background: #f1f1f1;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Categories */
+.categories {
+  position: sticky;
+  top: 60px;
+  display: flex;
+  gap: 10px;
+  padding: 10px 16px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  overflow-x: auto;
+
+  margin-left: 100px; 
+}
+
+.categories button {
+  padding: 6px 12px;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.categories button:hover {
+  background: #e5e5e5;
+}
+
+/* Video Grid */
+.video-grid {
+  margin-left: 80px; /* space for sidebar */
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.video-card {
+  cursor: pointer;
+}
+
+.video-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;   
+  border-radius: 10px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+
+.video-info h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.video-info p {
+  font-size: 13px;
+  color: #606060;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .video-grid {
+    margin-left: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .search-bar {
+    max-width: 300px;
+  }
+
+  .categories{
+    margin-left: 0;
+  }
+}
