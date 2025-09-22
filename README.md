@@ -60,11 +60,11 @@ mini-youtube-clone/
 
 ## Screenshots
 ### Home Page
-[HomePage](!website_screenshot/home_page.png)
+[HomePage](website_screenshot/home_page.png)
 
 ### Single Video page
-[VideoPage](!website_screenshot/single_video_page.png)
+[VideoPage](website_screenshot/single_video_page.png)
 
 ### Account Page
-[AccountPage](!website_screenshot/account_page.png)
+[AccountPage](website_screenshot/account_page.png)
 
